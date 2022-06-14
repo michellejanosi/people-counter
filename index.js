@@ -13,3 +13,7 @@ function increment() {
   count += 1;
   return countEl.innerText = count;
 }
+
+function save() {
+  console.log(count);
+}
