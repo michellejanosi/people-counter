@@ -1,12 +1,5 @@
-// intialize the count as 0
-// listen for clicks on the increment button
-// increment the count variable when the button is clicked
-// change the count-el in the HTML to reflect the new count
-
 let countEl = document.getElementById('count-el');
-
-// console.log(countEl);
-
+let saveEl = document.getElementById('save-el');
 let count = 0;
 
 function increment() {
@@ -15,5 +8,6 @@ function increment() {
 }
 
 function save() {
-  console.log(count);
+  let saveCount = `${count} -`;
+  saveEl.innerText += saveCount;
 }
